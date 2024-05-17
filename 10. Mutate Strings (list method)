@@ -1,0 +1,10 @@
+original_word, new_word = input(), input()
+transfroming_word = ''
+
+original_list = list(original_word)
+new_list = list(new_word)
+for letter_index in range(len(original_word)):
+   if original_word[letter_index] != new_word[letter_index]:
+        original_list[letter_index] = new_list[letter_index]
+        transfroming_word = ''.join(original_list)
+        print(transfroming_word)
