@@ -1,0 +1,13 @@
+number = input()
+bubble_reversed = list(int(i) for i in (number))
+
+sorted = False
+while not sorted:
+    sorted = True
+    for i in range(len(bubble_reversed) - 1):
+        if bubble_reversed[i] < bubble_reversed[i + 1]:
+            sorted = False
+            bubble_reversed[i], bubble_reversed[i + 1] = bubble_reversed[i + 1], bubble_reversed[i]
+bubble_reversed = (str(i) for i in bubble_reversed)
+biggest_num = ''.join(bubble_reversed)
+print(biggest_num)
