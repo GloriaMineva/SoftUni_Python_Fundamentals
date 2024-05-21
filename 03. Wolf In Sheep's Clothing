@@ -1,0 +1,11 @@
+non_splited_input = input()
+animals_split = list(non_splited_input.split(', '))
+animals_split.reverse()
+if animals_split[0] == 'wolf':
+    print('Please go away and stop eating my sheep')
+else:
+    for animal_index in range(len(animals_split)):
+        if animals_split[animal_index] == 'wolf':
+            print(f'Oi! Sheep number {animal_index}! You are about to be eaten by a wolf!')
+            break
+
