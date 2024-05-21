@@ -1,0 +1,7 @@
+secret_word = input()
+secret_list = list(secret_word)
+capitals_only = []
+for i in range(len(secret_list)):
+    if 65 <= ord(secret_list[i]) <= 90:
+        capitals_only.append(i)
+print(capitals_only)
