@@ -1,0 +1,9 @@
+text_input = input()
+created_list = list(int(x) for x in text_input.split())
+highest = max(created_list)
+lowest = min(created_list)
+calculation = sum(created_list)
+print(f'The minimum number is {lowest}')
+print(f'The maximum number is {highest}')
+print(f'The sum number is: {calculation}')
+
