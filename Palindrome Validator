@@ -1,0 +1,30 @@
+numbers_string = input()
+palindrome_list = list(numbers_string.split(', '))
+
+
+def palindrome_validator(num):
+    backwards_num = num[::-1]
+    if backwards_num == num:
+        print('True')
+    else:
+        print('False')
+
+for element in palindrome_list:
+    palindrome_validator(element)
+
+
+# def palindrome_valdator(lst):
+#     for num in lst:
+#         backwards_num = num[::-1]
+#         result = ''
+#         if backwards_num == num:
+#             result += 'True'
+#         else:
+#             result += 'False'
+#     return result
+#
+# print(palindrome_valdator(palindrome_list))
+
+
+
+
