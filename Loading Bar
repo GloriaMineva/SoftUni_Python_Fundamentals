@@ -1,0 +1,12 @@
+def loading_bar(number: int) -> str:
+    result_first_line = ''
+    result_second_line = ''
+    if number == 100:
+        return '100% Complete!\n[%%%%%%%%%%]'
+    else:
+        return f'{number}% [{(number // 10) * '%'}{(10 - (number // 10)) * '.'}]\nStill loading...'
+
+
+
+user_input_num = int(input())
+print(loading_bar(user_input_num))
