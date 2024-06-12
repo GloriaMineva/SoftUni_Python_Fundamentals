@@ -1,0 +1,24 @@
+def main(type_of_element, statement):
+    if type_of_element == 'int':
+        print(int_input(statement))
+    elif type_of_element == 'real':
+        print(f'{float_input(statement):.2f}')
+    else:
+        print(string_input(statement))
+
+
+def int_input(number: str) -> int:
+    return int(number) * 2
+
+
+def float_input(number: str) -> float:
+    return float(number) * 1.5
+
+
+def string_input(word: str) -> str:
+    return f'${word}$'
+
+
+user_input_type = input()
+user_input_statement = input()
+main(user_input_type, user_input_statement)
